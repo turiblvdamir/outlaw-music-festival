@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" itemscope itemtype="https://schema.org/MusicEvent">
+<html lang="en"
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -606,20 +606,21 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "MusicEvent",
-  "@id": "https://turiblvdamir.github.io/outlaw-music-festival/#primary-event",
+  "@type": "MusicFestival",
+  "@id": "https://turiblvdamir.github.io/outlaw-music-festival/#festival",
   "name": "Outlaw Music Festival 2026 Tour",
+  "description": "Outlaw Music Festival 2026 tour featuring Willie Nelson & Family, The Avett Brothers, Sheryl Crow, Wilco, Billy Strings and more across 12 U.S. cities from July to August 2026.",
   "startDate": "2026-07-03",
   "endDate": "2026-08-30",
   "eventStatus": "https://schema.org/EventScheduled",
   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-  "description": "Outlaw Music Festival 2026 featuring Willie Nelson & Family, The Avett Brothers, Sheryl Crow, Wilco, Billy Strings and more across 12 U.S. cities.",
   "image": [
     "https://outlawmusicfestive.com/wp-content/uploads/2026/01/outlaw-festival.jpg"
   ],
+  "url": "https://turiblvdamir.github.io/outlaw-music-festival/",
   "location": {
     "@type": "Place",
-    "name": "Multiple Venues (USA Tour)",
+    "name": "Multiple Venues Across United States",
     "address": {
       "@type": "PostalAddress",
       "addressCountry": "US"
@@ -650,12 +651,15 @@
   ],
   "organizer": {
     "@type": "Organization",
-    "name": "Blackbird Presents"
+    "name": "Blackbird Presents",
+    "url": "https://blackbirdpresents.com"
   },
   "offers": {
-    "@type": "Offer",
+    "@type": "AggregateOffer",
     "url": "https://outlawmusicfestive.com/",
     "priceCurrency": "USD",
+    "lowPrice": "69",
+    "highPrice": "649",
     "availability": "https://schema.org/InStock"
   }
 }
