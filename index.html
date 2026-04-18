@@ -603,58 +603,157 @@
 </footer>
 
 <!-- JSON-LD Structured Data for Rich Results -->
+<!-- JSON-LD Structured Data for Outlaw Music Festival 2026 Tour -->
 <script type="application/ld+json">
 {
-  "@type": "MusicEvent",
-  "@id": "https://turiblvdamir.github.io/outlaw-music-festival/#event",
+  "@context": "https://schema.org",
+  "@type": "EventSeries",
+  "@id": "https://turiblvdamir.github.io/outlaw-music-festival/#event-series",
   "name": "Outlaw Music Festival 2026 Tour",
+  "alternateName": "Willie Nelson Outlaw Festival 2026",
+  "description": "The 2026 Outlaw Music Festival Tour featuring Willie Nelson & Family headlining 12 summer dates across the United States. Rotating lineup includes The Avett Brothers, Sheryl Crow, Wilco, Billy Strings, Lukas Nelson, and more.",
   "startDate": "2026-07-03",
   "endDate": "2026-08-30",
   "eventStatus": "https://schema.org/EventScheduled",
   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-  "description": "Outlaw Music Festival 2026 featuring Willie Nelson & Family, The Avett Brothers, Sheryl Crow, Wilco, Billy Strings and more across 12 U.S. cities.",
   "image": [
     "https://outlawmusicfestive.com/wp-content/uploads/2026/01/outlaw-festival.jpg"
   ],
+  "url": "https://outlawmusicfestive.com/",
+  "sameAs": [
+    "https://en.wikipedia.org/wiki/Outlaw_Music_Festival"
+  ],
   "location": {
     "@type": "Place",
-    "name": "Multiple Venues Across United States",
+    "name": "Various Venues - United States",
     "address": {
       "@type": "PostalAddress",
       "addressCountry": "US"
     }
   },
-  "performer": [
-    {
-      "@type": "Person",
-      "name": "Willie Nelson",
-      "sameAs": "https://en.wikipedia.org/wiki/Willie_Nelson"
-    },
-    {
-      "@type": "MusicGroup",
-      "name": "The Avett Brothers"
-    },
-    {
-      "@type": "Person",
-      "name": "Sheryl Crow"
-    },
-    {
-      "@type": "MusicGroup",
-      "name": "Wilco"
-    },
-    {
-      "@type": "Person",
-      "name": "Billy Strings"
-    }
-  ],
   "organizer": {
     "@type": "Organization",
-    "name": "Blackbird Presents"
+    "name": "Blackbird Presents",
+    "url": "https://www.blackbirdpresents.com/"
   },
+  "performer": [
+    {
+      "@type": "MusicGroup",
+      "name": "Willie Nelson & Family",
+      "member": {
+        "@type": "Person",
+        "name": "Willie Nelson",
+        "sameAs": "https://en.wikipedia.org/wiki/Willie_Nelson"
+      }
+    },
+    {
+      "@type": "MusicGroup",
+      "name": "The Avett Brothers",
+      "sameAs": "https://en.wikipedia.org/wiki/The_Avett_Brothers"
+    },
+    {
+      "@type": "Person",
+      "name": "Sheryl Crow",
+      "sameAs": "https://en.wikipedia.org/wiki/Sheryl_Crow"
+    },
+    {
+      "@type": "MusicGroup",
+      "name": "Wilco",
+      "sameAs": "https://en.wikipedia.org/wiki/Wilco"
+    },
+    {
+      "@type": "Person",
+      "name": "Billy Strings",
+      "sameAs": "https://en.wikipedia.org/wiki/Billy_Strings"
+    },
+    {
+      "@type": "Person",
+      "name": "Lukas Nelson"
+    },
+    {
+      "@type": "Person",
+      "name": "Margo Price"
+    },
+    {
+      "@type": "Person",
+      "name": "Stephen Wilson Jr."
+    }
+  ],
+  "subEvent": [
+    {
+      "@type": "MusicEvent",
+      "name": "Outlaw Music Festival - Irving, TX",
+      "startDate": "2026-07-03",
+      "location": {
+        "@type": "Place",
+        "name": "The Pavilion at Toyota Music Factory",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Irving",
+          "addressRegion": "TX",
+          "addressCountry": "US"
+        }
+      },
+      "performer": ["Willie Nelson & Family", "Wilco", "Sheryl Crow"],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://outlawmusicfestive.com/",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Outlaw Music Festival 4th of July Picnic - Austin, TX",
+      "startDate": "2026-07-04",
+      "location": {
+        "@type": "Place",
+        "name": "Germania Insurance Amphitheater",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Austin",
+          "addressRegion": "TX",
+          "addressCountry": "US"
+        }
+      },
+      "performer": ["Willie Nelson & Family", "Billy Strings", "Rodney Crowell"],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://outlawmusicfestive.com/",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "MusicEvent",
+      "name": "Outlaw Music Festival - The Woodlands, TX",
+      "startDate": "2026-07-05",
+      "location": {
+        "@type": "Place",
+        "name": "The Cynthia Woods Mitchell Pavilion",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "The Woodlands",
+          "addressRegion": "TX",
+          "addressCountry": "US"
+        }
+      },
+      "performer": ["Willie Nelson & Family", "Wilco", "Sheryl Crow"],
+      "offers": {
+        "@type": "Offer",
+        "url": "https://outlawmusicfestive.com/",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+  ],
   "offers": {
-    "@type": "Offer",
+    "@type": "AggregateOffer",
     "url": "https://outlawmusicfestive.com/",
     "priceCurrency": "USD",
+    "lowPrice": "69",
+    "highPrice": "649",
+    "offerCount": "12",
     "availability": "https://schema.org/InStock"
   }
 }
